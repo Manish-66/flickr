@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <header>
+        <div class="con"><img
+                src="https://combo.staticflickr.com/66a031f9fc343c5e42d965ca/66b3f60bcd82f68f2716490a_flickr%20horz%20logo-light.png"
+                class="logo"></div>
+        <div class="greeting"></div>
+    </header>
+    <main>
+        <div class="icons">
+            <div class="star i" title="Favourites"><i class="fa-solid fa-star" style="color: #ffffff;"></i></div>
+            <div class="dotted"></div>
+            <div class="unlock i" title="Unlock Now"><i class="fa-solid fa-key" style="color: #ffffff;"></i>
+                <div class="count" id="count">3</div>
+            </div>
+            <div class="dotted"></div>
+            <div class="upload i" title="Upload"><i class="fa-solid fa-arrow-up-from-bracket"
+                    style="color: #ffffff;"></i></div>
+            <div class="dotted"></div>
+            <div class="logout i" title="Logout" id="logoutBtn"><i class="fa-solid fa-right-from-bracket fa-flip-horizontal"
+                    style="color: #ffffff;"></i></i>
+            </div>
+        </div>
+        <div class="mid">
+            <img class="midimg">
+            <div class="fav swipe" id="fav01"><i class="fa-solid fa-star starbutton"></i></div>
+            <div class="del swipe" id="del01"><i class="fa-solid fa-trash delbutton"></i></div>
+            <div class="left swipe" id="left01"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></div>
+            <div class="right swipe" id="right01"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></div>
+        </div>
+        <div class="side hide" id="spcl1">
+            <div class="image" id="fav02">
+                <div class="lefti swipe" id="left03"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></div>
+                <div class="righti swipe" id="right03"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></div>
+            </div>
+            <div class="unstar" title="Unfavourite" id="fav03">
+                <div class="cross"></div><i class="fa-solid fa-star unfav"></i>
+            </div>
+        </div>
+        <div class="side hide" id="spcl2">
+            <div class="image" id="unlock01">
+                <div class="lefti swipe" id="left02"><i class="fa-solid fa-arrow-left" style="color: #ffffff;"></i></div>
+                <div class="righti swipe" id="right02"><i class="fa-solid fa-arrow-right" style="color: #ffffff;"></i></div>
+            </div>
+            <div class="unlockdiv" title="Unlock" id="unlock02"><i class="fa-solid fa-lock-open unlock"></i></div>
+        </div>
+        <div class="side form hide" id="spcl3">
+            <form action="/upload" method="POST" enctype="multipart/form-data">
+                <label for="image">Upload Image:</label>
+                <input type="file" id="image" name="image" accept="image/*" required><br />
+
+                <label for="date">Select Date:</label>
+                <input type="date" id="date" name="unlockDate" required><br />
+
+                <button type="submit" class="btn" title="Upload">
+                    <div class="uploadbtn"><i class="fa-solid fa-arrow-up-from-bracket"
+                            style="color: #ffffff;"></i></div>
+                </button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        ~ Because Some Memories Deserve to Wait for the Perfect Moment
+    </footer>
+
+    <script src="home.js"></script>
+</body>
+
+</html>

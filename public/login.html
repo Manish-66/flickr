@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    
+    <div class="circle">
+        <div class="con"><img src="https://combo.staticflickr.com/66a031f9fc343c5e42d965ca/66b3f60bcd82f68f2716490a_flickr%20horz%20logo-light.png" class="logo"></div>
+
+        <button class="login" id="googleLogin">Login with Google</button>
+    </div>
+
+<script>
+    document.getElementById("googleLogin").addEventListener("click", () => {
+    window.location.href = "http://localhost:3000/auth/google";
+  });
+</script>
+</body>
+</html>
