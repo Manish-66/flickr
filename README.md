@@ -94,6 +94,5 @@ Make sure there is an `uploads/` directory at the project root for storing user-
 ### Upload Memory Page
 <img src="./App%20ScreenShots/Upload.png" width="1000"/>
 
-## Full Demo Video
-[Watch Full Demo on LinkedIn](https://www.linkedin.com/posts/harshithi5_well-didnt-have-a-clue-what-idea-to-go-activity-7334433398498713600-9jGX?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEuO7_kB_Y5nuxv1MVT_bRVKgknApzb6AiE)
+
 
